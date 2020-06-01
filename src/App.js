@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import './App.css';
 import Axios from 'axios';
 import useAxios, {configure} from 'axios-hooks'
 
 // Define axios instance, you could use env to split up production & development
 // The useAxios provides directly by axios-hooks use the same instance
 // If you need more than one axios instance, explain later
-const axiosInstance = Axios.create({baseURL: 'http://www.mocky.io/v2'})
+const axiosInstance = Axios.create({baseURL: 'https://www.mocky.io/v2'})
 configure({axios: axiosInstance})
 
 // You should define your api url somewhere in your project.
