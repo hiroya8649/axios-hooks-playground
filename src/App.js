@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Axios from 'axios';
 import useAxios, {configure} from 'axios-hooks'
 
