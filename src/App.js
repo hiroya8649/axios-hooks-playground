@@ -34,7 +34,7 @@ function App() {
           // You can set the common authorization header like this way
           axiosInstance.defaults.headers.authorization='test101'
           // Example to update data
-          updateData({url: api.putMail.url('myid'), data: {thedata: 'you want to put'}, headers: {'g-response-token': 'anotherheader'}})
+          updateData({url: api.putMail.url('myid'), data: {thedata: 'you want to put'}, headers: {'another-header': 'test202'}})
             .then((data) => {console.log(data)}) // Use it by the way you want, even with redux store
       }}>
         test
